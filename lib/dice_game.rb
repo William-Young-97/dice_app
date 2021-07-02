@@ -1,5 +1,5 @@
 class Dice
- def roll()
-  rand(1..6)
+ def roll(num = 1)
+   num.times { p rand(1..6) }
  end
 end
