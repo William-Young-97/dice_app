@@ -17,4 +17,12 @@ describe Dice do
   expect(subject).to respond_to(:roll).with(1).argument
   end
 
+  it "Should return a record of our dice throw" do
+  expect(subject).to respond_to(:record)
+  end
+
+  it "'Subject.record' should should push previous dice rolls" do
+  expect(subject.record).to include()
+ end
+
 end
