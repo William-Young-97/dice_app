@@ -9,7 +9,7 @@ describe Dice do
   expect(subject).to respond_to(:roll)
   end
   
-  it "Should output between 1 and 6" do
-  expect(subject.roll).to eq(5)
+  it "Should output randomly between 1 and 6" do
+  expect(subject.roll).to be_between(1, 6)
   end
 end
