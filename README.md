@@ -25,6 +25,7 @@ This is a simple dice game that is built following the core test driven developm
 
 - James Condon @ JEC1100
 - William Young @ William-Young-97
+- Karim Abu-Seer @ karimabuseer
 
 ## Conclusion
 

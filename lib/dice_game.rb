@@ -11,6 +11,10 @@ class Dice
     record
     @current_rolls
   end
+
+  def score
+    @previous_rolls.flatten.sum
+  end
   
   private 
 
