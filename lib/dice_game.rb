@@ -1,13 +1,25 @@
 class Dice
- def instantise 
-  @previous_rolls =  []
- end
+  attr_reader :previous_rolls
+  def initialize
+    @previous_rolls = []
+    @current_rolls = []
+  end
+ 
+  def roll(num = 1)
+    @current_rolls = []
+    num.times { @current_rolls << roller }
+    record
+    @current_rolls
+  end
+  
+  private 
 
- def roll(num = 1)
-  @die_roll = num.times { puts rand(1..6) }
- end
-
- def record
-  p @previous_rolls
- end
+  def record
+    @previous_rolls << @current_rolls
+  end
+   
+  def roller
+    rand(1..6)
+  end
 end
+
